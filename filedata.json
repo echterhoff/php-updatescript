@@ -1,0 +1,35 @@
+{
+    "name": "blogscorecard updater",
+    "targetsystem": {
+        "updater": {
+            "getfilelist": "http://blogscorer.testsystem.diacritic.de/updatesystem/update.php?get=filelist"
+        },
+        "accesskey": "iamallowedtoaccess"
+    },
+    "systemroot": "../",
+    "exclude": {
+        "files": [
+            "revision.counter",
+            ".*\.preset",
+            "get_current_dev.*",
+            "filedata.json",
+            "pathaccesses.txt"
+        ],
+        "filetypes": [
+            "old",
+            "htaccess",
+            "tmp"
+        ],
+        "directorys": [
+            "systemupdate/releases",
+            "rankingpresets",
+            "sessionstorage",
+            "screenshotsstorage",
+            "cfg",
+            "cache",
+            "assets",
+            "logs",
+            "log"
+        ]
+    }
+}
